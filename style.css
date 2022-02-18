@@ -1,0 +1,173 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: hsl(217, 54%, 11%);
+}
+
+.center {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	width: 330px;
+	height: 560px;
+	background-color: red;
+	border-radius: 20px;
+	background-color: hsl(216, 50%, 16%);
+	box-shadow: 0px 0px 10px hsl(0, 0%, 6%);
+}
+
+.centerNFTpreview {
+	position: relative;
+  	width: 286px;
+  	margin: 22px 0 0 22px;
+}
+
+.NFTpreview {
+	display: block;
+  	width: 100%;
+  	height: auto;
+  	border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 10px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 6px 10px;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.centerNFTpreview:hover .overlay {
+  opacity: 0.5;
+}
+
+.centerNFTpreview:hover .text {
+  opacity: 1;
+}
+
+.NFTtitle {
+	font-family: "Outfit", sans-serif;
+	color: hsl(0, 0%, 100%);
+	font-weight: 600;
+	font-size: 18px;
+	display: inline-block;
+	margin: 25px 0 25px 22px;
+}
+
+.NFTtitle:hover {
+	cursor: pointer;
+	color: hsl(178, 100%, 50%);
+}
+
+.NFTdesc {
+	font-family: "Outfit", sans-serif;
+	color: hsl(215, 51%, 70%);
+	font-weight: 300;
+	font-size: 18px;
+	display: inline-block;
+	margin: 0 22px;
+}
+
+.NFTmeta {
+	margin: 25px 22px 25px 22px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.NFTmetaleft {
+	width: 143px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 20px;
+}
+
+.NFTvalue {
+	font-family: "Outfit", sans-serif;
+	color: hsl(178, 100%, 50%);
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.iconv {
+	margin-right: 5px;
+}
+
+.NFTmetaright {
+	width: 143px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 20px;
+}
+
+.NFTtime {
+	font-family: "Outfit", sans-serif;
+	color: hsl(215, 51%, 70%);
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.icont {
+	margin-right: 5px;
+}
+
+.divisor {
+	margin: 0 22px;
+	border: 1px solid hsl(215, 32%, 27%);
+}
+
+.NFTmetaautor {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 10px 22px 10px 22px;
+}
+
+.autorprofile {
+	width: 30px;
+	height: 30px;
+	border-radius: 20px;
+	border: 1px solid white;
+	margin-right: 10px;
+}
+
+.username {
+	font-family: "Outfit", sans-serif;
+	color: hsl(215, 51%, 70%);
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.name {
+	color: hsl(0, 0%, 100%);
+}
+
+.name:hover {
+	cursor: pointer;
+	color: hsl(178, 100%, 50%);
+}
